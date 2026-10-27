@@ -514,7 +514,7 @@
   -->
   <script>
 /* ============================================================
-   MAKEUPKARELYS — Lógica del cliente (réplica de Bodegon Evolution v40)
+   FRUGULLETTY — Lógica del cliente
    Se ejecuta en el navegador (Android, iPhone, PC).
    ============================================================ */
 
@@ -545,10 +545,8 @@ var S = {
 
 var usaRun = (typeof google !== 'undefined' && google.script && google.script.run);
 var DEMO = !usaRun && (typeof location === 'undefined' || location.protocol === 'file:');
-// URL del backend (despliegue web de Apps Script). La app se puede servir desde
-// CUALQUIER página (host propio, localhost…); todos los datos viven en la hoja.
-// ⚠️ RÉPLICA INDEPENDIENTE (MakeupKarelys): URL /exec del deployment propio.
-var URL_API = 'https://script.google.com/macros/s/AKfycbzLgLTipYZdCzp5vyyNWHYGT2HrSz-se3R1hMTaZfa9Ntwk_ez5GpfgZ7v32LJcIqLOow/exec';
+// URL del backend (despliegue web de Apps Script).
+var URL_API = 'https://script.google.com/macros/s/AKfycbz3dtfCBfItznU4yfxeiaFYoN7SNGmAHcq5N5pFtZxA8y2lelLtn9AxF8s8Mr_dXTen/exec';
 var CARRITO = [];
 var _promTasa = null;
 var _scan = null;
